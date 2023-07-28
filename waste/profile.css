@@ -1,0 +1,672 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+  .cover {
+    position: relative;
+    background-image: url('https://ik.imagekit.io/ybxp6hmaz/stage-focus-sportlight-falling_1017-25841.avif?updatedAt=1690487834784');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .cover-photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .profile-container {
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    perspective: 800px;
+  }
+  
+  .profile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  
+  .profile:hover {
+    transform: rotateX(0) rotateY(0);
+  }
+  
+  .profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    border-radius: 30%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .profile-info {
+    position: absolute;
+    width: 60%;
+    height: 0;
+    bottom: 0;
+    top: -150px;
+    left: 500px;
+    right: 0;
+    padding: 20px;
+  }
+
+  
+  .info-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transform: rotateX(-10deg) rotateY(-10deg);
+    transition: transform 0.5s;
+    border: 1px solid #fff;
+    padding: 20px;
+  }
+  
+  .cover-photo:hover .info-box {
+    transform: rotateX(0) rotateY(0);
+  }
+  
+  h1, h3, p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgb(0, 0, 0); /* Set your desired background color for the navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-menu li {
+    margin-right: 20px;
+  }
+  
+  .navbar-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-menu li a {
+    color: #fff; /* Set your desired text color for the navbar items */
+    text-decoration: none;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    transform: translateY(-3px); /* Add a 3D effect on hover */
+  }
+  
+  /* Smooth Scrolling Effect */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Previous CSS styles are still valid. You can use the previous CSS code here. */
+  
+  
+  
+  .section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  
+  /* Previous CSS styles are still valid. You can use the previous CSS code here. */
+#skills {
+    background-color: #000000;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+  }
+  
+  .skill {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 30px;
+   
+  }
+  
+  .skill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .skill-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .skill:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .skill:hover img {
+    opacity: 0.7;
+  }
+  
+  .skill:hover .skill-name {
+    opacity: 1;
+  }
+  
+
+/* Update the background color for the certificates section */
+
+
+#certificates .carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: fill;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+
+  .certificates-heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 30px;
+  }
+
+
+  /* Feedback Form Styles */
+  #feedback {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -40px;
+    margin-bottom: -90px;
+  }
+  
+  .feedback-heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 30px;
+  }
+  
+  .feedback-form {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%; /* Adjust the width to make it narrower */
+    max-width: 400px; /* Set a maximum width for responsiveness */
+    margin-left: 370px; /* Add right margin to push it towards the right side */
+  }
+  
+  .form-group {
+    margin-bottom: 50px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #ffcc00;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #000000b8;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgb(252, 3, 3);
+    transition: 0.2s ease all;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #4CAF50;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .submit-btn:hover {
+    background-color: #f6b93b;
+  }
+  
+ 
+  /* Contact Section Styles */
+#contact {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .section-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 30px;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contact-item {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .contact-item img {
+    width: 50px; /* Adjust the width of the logo as needed */
+    height: 50px; /* Adjust the height of the logo as needed */
+    margin-bottom: 10px;
+  }
+  
+  .contact-item p {
+    font-size: 16px;
+  }
+  
+  /* Add any additional styles as needed for logos or contact details */
+  
+  
+  @media (max-width: 1024px) {
+    .navbar-nav {
+      margin-top: 10px;
+    }
+  }
+   
+  .section {
+    padding: 80px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .section-heading p {
+    font-size: 18px;
+    color: #ffcc00;
+  }
+  
+  .education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+  
+  .education-box {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(200, 10, 10);
+  }
+  
+  .education-content {
+    text-align: center;
+  }
+  
+  .education-title {
+    font-size: 24px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .education-content p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .top-left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .center {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .bottom-right {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  
+  /* Previous CSS styles are still valid. You can use the previous CSS code here. */
+  #portfolio {
+    background-color: #000000;
+  }
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.92);
+    color: #f0f0f0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .project:hover img {
+    transform: scale(1.1);
+  }
+  
+  .project:hover .project-name {
+    opacity: 1;
+  }
+  
+  /* Previous CSS styles are still valid. You can use the previous CSS code here. */
+
+/* Update the background color for the internship section */
+#internship {
+    background-color: #000000;
+  }
+  
+  .internship-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  
+  .internship-item {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(220, 14, 14);
+    background-color: #000000;
+  }
+  
+  .internship-title {
+    color: #ffcc00;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .internship-description {
+    color: #f0f0f0;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .internship-certificate {
+    color: #ffcc00;
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+
+
+ /* css */
+ 
+
+ /* Your existing CSS code */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust the styles for small devices (e.g., tablets) */
+    .cover {
+      min-height: auto;
+    }
+  
+    .profile-container {
+      left: 20px;
+      bottom: 10px;
+    }
+  
+    .profile {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .profile-info {
+      width: 80%;
+      left: 10%;
+      bottom: -140px;
+    }
+  
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .navbar-menu li {
+      margin-right: 10px;
+    }
+  
+    .section-heading h2 {
+      font-size: 28px;
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  
+    .skill {
+      width: 100px;
+      height: 100px;
+    }
+  
+    #certificates .carousel-item img {
+      height: 400px;
+    }
+  
+    .education-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .education-box,
+    .internship-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .contact-details {
+      flex-wrap: wrap;
+    }
+  
+    .contact-item {
+      margin: 10px;
+    }
+  
+    .feedback-form {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 90%;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  }
+  
+  /* Additional Media Queries for Smaller Devices */
+  @media (max-width: 576px) {
+    /* Adjust the styles for extra small devices (e.g., smartphones) */
+    .cover {
+      min-height: auto;
+    }
+  
+    .navbar-brand {
+      font-size: 18px;
+    }
+  
+    .navbar-menu li {
+      margin-right: 5px;
+    }
+  
+    .section-heading h2 {
+      font-size: 24px;
+    }
+  
+    .skills-grid {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  
+    .skill {
+      width: 80px;
+      height: 80px;
+    }
+  
+    #certificates .carousel-item img {
+      height: 300px;
+    }
+  
+    .education-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .education-box,
+    .internship-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .contact-item img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .feedback-form {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 90%;
+    }
+  
+    .feedback-heading {
+      font-size: 28px;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  }
+  
